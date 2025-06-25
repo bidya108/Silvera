@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Silvera | Luxury Jewelry Collection</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#C0C0C0", secondary: "#808080" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&amp;family=Italiana&amp;family=Cormorant+Garamond:wght@300;400;500;600;700&amp;family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet"/>
+
+<link href="silvera.css" rel="stylesheet"/></head>
+<body>
+<!-- Header -->
+<header class="fixed top-0 left-0 w-full bg-gradient-to-r from-[#E6E6E6] to-[#D3D3D3] z-50 shadow-md">
+<div class="container mx-auto px-4 py-3 flex items-center justify-between">
+<div class="flex items-center">
+<a class="font-['Italiana'] text-3xl text-[#333333] tracking-widest" href="#">SILVERA</a>
+</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-[#333333] hover:text-primary font-medium transition-colors duration-300" href="#">Home</a>
+<a class="text-[#333333] hover:text-primary font-medium transition-colors duration-300" href="#">Collections</a>
+<a class="text-[#333333] hover:text-primary font-medium transition-colors duration-300" href="#">New Arrivals</a>
+<a class="text-[#333333] hover:text-primary font-medium transition-colors duration-300" href="#">About</a>
+<a class="text-[#333333] hover:text-primary font-medium transition-colors duration-300" href="#">Contact</a>
+</nav>
+<div class="flex items-center space-x-4">
+<div class="relative">
+<button class="w-10 h-10 flex items-center justify-center text-[#333333] hover:text-primary transition-colors duration-300">
+<i class="ri-search-line ri-lg"></i>
+</button>
+</div>
+<div class="relative">
+<button class="w-10 h-10 flex items-center justify-center text-[#333333] hover:text-primary transition-colors duration-300">
+<i class="ri-user-line ri-lg"></i>
+</button>
+</div>
+<div class="relative">
+<button class="w-10 h-10 flex items-center justify-center text-[#333333] hover:text-primary transition-colors duration-300">
+<i class="ri-heart-line ri-lg"></i>
+</button>
+<span class="absolute -top-1 -right-1 bg-primary text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">2</span>
+</div>
+<div class="relative">
+<button class="w-10 h-10 flex items-center justify-center text-[#333333] hover:text-primary transition-colors duration-300">
+<i class="ri-shopping-bag-line ri-lg"></i>
+</button>
+<span class="absolute -top-1 -right-1 bg-primary text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">3</span>
+</div>
+<button class="md:hidden w-10 h-10 flex items-center justify-center text-[#333333]">
+<i class="ri-menu-line ri-lg"></i>
+</button>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="parallax-section h-screen pt-16 relative" id="hero">
+<div class="hero-bg" style="background-image: url('https://readdy.ai/api/search-image?query=luxury%20silver%20jewelry%20collection%20with%20elegant%20necklaces%2C%20rings%2C%20and%20bracelets%20arranged%20artistically%20on%20a%20soft%20gray%20gradient%20background%20with%20subtle%20light%20reflections%20and%20a%20minimalist%20aesthetic%2C%20professional%20product%20photography%20with%20soft%20lighting&amp;width=1920&amp;height=1080&amp;seq=1&amp;orientation=landscape'); background-size: cover; background-position: center; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></div>
+<div class="absolute inset-0 bg-black bg-opacity-20 z-0"></div>
+<div class="container mx-auto px-4 h-full flex items-center relative z-10">
+<div class="w-full md:w-1/2 text-white">
+<h1 class="text-5xl md:text-6xl lg:text-7xl font-light mb-6 leading-tight">
+            Timeless Elegance in <span class="font-semibold">Silver</span>
+</h1>
+<p class="text-lg md:text-xl mb-8 max-w-lg">
+            Discover our exquisite collection of handcrafted silver jewelry,
+            designed to elevate your style with timeless sophistication.
+          </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="bg-white text-[#333333] px-8 py-3 !rounded-button font-medium hover:bg-opacity-90 transition-all duration-300 text-center whitespace-nowrap" href="#collections">Shop Collection</a>
+<a class="border border-white text-white px-8 py-3 !rounded-button font-medium hover:bg-white hover:bg-opacity-10 transition-all duration-300 text-center whitespace-nowrap" href="#featured">New Arrivals</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Categories Section -->
+<section class="py-20 bg-[#F5F5F5]">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-light mb-4">
+            Our <span class="font-semibold">Collections</span>
+</h2>
+<p class="text-[#808080] max-w-2xl mx-auto">
+            Explore our curated categories of exquisite silver jewelry, each
+            piece telling its own unique story of craftsmanship and elegance.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="category-card fade-in">
+<div class="relative overflow-hidden rounded-lg mb-4 group">
+<div class="transform group-hover:scale-105 transition-transform duration-500" style="background-image: url('https://readdy.ai/api/search-image?query=elegant%20silver%20necklace%20collection%20arranged%20on%20a%20minimalist%20light%20gray%20background%2C%20professional%20jewelry%20photography%20with%20soft%20lighting%20highlighting%20the%20silver%20details%20and%20craftsmanship%2C%20high-end%20luxury%20product%20shot%20with%20clean%20composition&amp;width=600&amp;height=800&amp;seq=2&amp;orientation=portrait'); background-size: cover; background-position: center; height: 350px;"></div>
+<div class="absolute inset-0 bg-black bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<a class="bg-white text-[#333333] px-6 py-2 !rounded-button font-medium hover:bg-opacity-90 transition-all duration-300 whitespace-nowrap" href="#">Explore</a>
+</div>
+</div>
+<h3 class="text-2xl font-medium text-center">Necklaces</h3>
+</div>
+<div class="category-card fade-in">
+<div class="relative overflow-hidden rounded-lg mb-4 group">
+<div class="transform group-hover:scale-105 transition-transform duration-500" style="background-image: url('https://readdy.ai/api/search-image?query=luxury%20silver%20bracelets%20and%20bangles%20arranged%20artistically%20on%20a%20light%20gray%20background%2C%20professional%20jewelry%20photography%20with%20soft%20lighting%20highlighting%20the%20intricate%20details%20and%20craftsmanship%2C%20high-end%20product%20shot%20with%20clean%20composition%20and%20subtle%20shadows&amp;width=600&amp;height=800&amp;seq=3&amp;orientation=portrait'); background-size: cover; background-position: center; height: 350px;"></div>
+<div class="absolute inset-0 bg-black bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<a class="bg-white text-[#333333] px-6 py-2 !rounded-button font-medium hover:bg-opacity-90 transition-all duration-300 whitespace-nowrap" href="#">Explore</a>
+</div>
+</div>
+<h3 class="text-2xl font-medium text-center">Bracelets</h3>
+</div>
+<div class="category-card fade-in">
+<div class="relative overflow-hidden rounded-lg mb-4 group">
+<div class="transform group-hover:scale-105 transition-transform duration-500" style="background-image: url('https://readdy.ai/api/search-image?query=elegant%20silver%20rings%20collection%20arranged%20on%20a%20minimalist%20light%20gray%20background%2C%20professional%20jewelry%20photography%20with%20soft%20lighting%20highlighting%20the%20intricate%20details%20and%20craftsmanship%2C%20high-end%20luxury%20product%20shot%20with%20clean%20composition%20and%20subtle%20reflections&amp;width=600&amp;height=800&amp;seq=4&amp;orientation=portrait'); background-size: cover; background-position: center; height: 350px;"></div>
+<div class="absolute inset-0 bg-black bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<a class="bg-white text-[#333333] px-6 py-2 !rounded-button font-medium hover:bg-opacity-90 transition-all duration-300 whitespace-nowrap" href="#">Explore</a>
+</div>
+</div>
+<h3 class="text-2xl font-medium text-center">Rings</h3>
+</div>
+<div class="category-card fade-in">
+<div class="relative overflow-hidden rounded-lg mb-4 group">
+<div class="transform group-hover:scale-105 transition-transform duration-500" style="background-image: url('https://readdy.ai/api/search-image?query=elegant%20silver%20earrings%20collection%20arranged%20on%20a%20minimalist%20light%20gray%20background%2C%20professional%20jewelry%20photography%20with%20soft%20lighting%20highlighting%20the%20intricate%20details%20and%20craftsmanship%2C%20high-end%20luxury%20product%20shot%20with%20clean%20composition%20and%20subtle%20shadows&amp;width=600&amp;height=800&amp;seq=5&amp;orientation=portrait'); background-size: cover; background-position: center; height: 350px;"></div>
+<div class="absolute inset-0 bg-black bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<a class="bg-white text-[#333333] px-6 py-2 !rounded-button font-medium hover:bg-opacity-90 transition-all duration-300 whitespace-nowrap" href="#">Explore</a>
+</div>
+</div>
+<h3 class="text-2xl font-medium text-center">Earrings</h3>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Products -->
+<section class="py-20 bg-[#f0f0f0]" id="featured">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-light mb-4">
+            Featured <span class="font-semibold">Pieces</span>
+</h2>
+<p class="text-[#808080] max-w-2xl mx-auto">
+            Our most coveted designs, each piece meticulously crafted to
+            perfection.
+          </p>
+</div>
+<div class="flex justify-center mb-10">
+<div class="inline-flex bg-[#F5F5F5] p-1 rounded-full">
+<button class="tab-button active px-6 py-2 rounded-full whitespace-nowrap" data-tab="new-arrivals">
+              New Arrivals
+            </button>
+<button class="tab-button px-6 py-2 rounded-full whitespace-nowrap" data-tab="bestsellers">
+              Bestsellers
+            </button>
+<button class="tab-button px-6 py-2 rounded-full whitespace-nowrap" data-tab="on-sale">
+              On Sale
+            </button>
+</div>
+</div>
+<div class="tab-content" id="new-arrivals">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 fade-in">
+<div class="relative">
+<div style="background-image: url('https://readdy.ai/api/search-image?query=elegant%20silver%20pendant%20necklace%20with%20intricate%20filigree%20design%20on%20a%20minimalist%20light%20gray%20background%2C%20professional%20jewelry%20photography%20with%20soft%20lighting%20highlighting%20the%20silver%20details%20and%20craftsmanship%2C%20high-end%20luxury%20product%20shot%20with%20clean%20composition&amp;width=600&amp;height=600&amp;seq=6&amp;orientation=squarish'); background-size: cover; background-position: object-top; height: 300px;"></div>
+<div class="absolute top-4 right-4 flex flex-col gap-2">
+<button class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#808080] hover:text-primary transition-colors duration-300 shadow-sm">
+<i class="ri-heart-line ri-lg"></i>
+</button>
+<button class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#808080] hover:text-primary transition-colors duration-300 shadow-sm">
+<i class="ri-eye-line ri-lg"></i>
+</button>
+</div>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-white text-xs px-3 py-1 rounded-full">New</span>
+</div>
+</div>
+<div class="p-4">
+<h3 class="text-lg font-medium mb-1">Aria Silver Pendant</h3>
+<p class="text-[#808080] text-sm mb-2">
+                  Handcrafted Filigree Design
+                </p>
+<div class="flex items-center justify-between">
+<span class="text-[#333333] font-semibold">$189.00</span>
+<button class="bg-[#F5F5F5] hover:bg-primary hover:text-white text-[#333333] p-2 rounded-full transition-colors duration-300">
+<i class="ri-shopping-bag-line"></i>
+</button>
+</div>
+</div>
+</div>
+<div class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 fade-in">
+<div class="relative">
+<div style="background-image: url('https://readdy.ai/api/search-image?query=elegant%20silver%20bangle%20bracelet%20with%20minimalist%20design%20on%20a%20light%20gray%20background%2C%20professional%20jewelry%20photography%20with%20soft%20lighting%20highlighting%20the%20silver%20details%20and%20craftsmanship%2C%20high-end%20luxury%20product%20shot%20with%20clean%20composition%20and%20subtle%20reflections&amp;width=600&amp;height=600&amp;seq=7&amp;orientation=squarish'); background-size: cover; background-position: object-top; height: 300px;"></div>
+<div class="absolute top-4 right-4 flex flex-col gap-2">
+<button class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#808080] hover:text-primary transition-colors duration-300 shadow-sm">
+<i class="ri-heart-line ri-lg"></i>
+</button>
+<button class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#808080] hover:text-primary transition-colors duration-300 shadow-sm">
+<i class="ri-eye-line ri-lg"></i>
+</button>
+</div>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-white text-xs px-3 py-1 rounded-full">New</span>
+</div>
+</div>
+<div class="p-4">
+<h3 class="text-lg font-medium mb-1">Luna Bangle Bracelet</h3>
+<p class="text-[#808080] text-sm mb-2">Minimalist Design</p>
+<div class="flex items-center justify-between">
+<span class="text-[#333333] font-semibold">$145.00</span>
+<button class="bg-[#F5F5F5] hover:bg-primary hover:text-white text-[#333333] p-2 rounded-full transition-colors duration-300">
+<i class="ri-shopping-bag-line"></i>
+</button>
+</div>
+</div>
+</div>
+<div class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 fade-in">
+<div class="relative">
+<div style="background-image: url('https://readdy.ai/api/search-image?query=elegant%20silver%20statement%20ring%20with%20geometric%20design%20on%20a%20minimalist%20light%20gray%20background%2C%20professional%20jewelry%20photography%20with%20soft%20lighting%20highlighting%20the%20silver%20details%20and%20craftsmanship%2C%20high-end%20luxury%20product%20shot%20with%20clean%20composition%20and%20subtle%20shadows&amp;width=600&amp;height=600&amp;seq=8&amp;orientation=squarish'); background-size: cover; background-position: object-top; height: 300px;"></div>
+<div class="absolute top-4 right-4 flex flex-col gap-2">
+<button class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#808080] hover:text-primary transition-colors duration-300 shadow-sm">
+<i class="ri-heart-line ri-lg"></i>
+</button>
+<button class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#808080] hover:text-primary transition-colors duration-300 shadow-sm">
+<i class="ri-eye-line ri-lg"></i>
+</button>
+</div>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-white text-xs px-3 py-1 rounded-full">New</span>
+</div>
+</div>
+<div class="p-4">
+<h3 class="text-lg font-medium mb-1">Geo Statement Ring</h3>
+<p class="text-[#808080] text-sm mb-2">Contemporary Design</p>
+<div class="flex items-center justify-between">
+<span class="text-[#333333] font-semibold">$120.00</span>
+<button class="bg-[#F5F5F5] hover:bg-primary hover:text-white text-[#333333] p-2 rounded-full transition-colors duration-300">
+<i class="ri-shopping-bag-line"></i>
+</button>
+</div>
+</div>
+</div>
+<div class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 fade-in">
+<div class="relative">
+<div style="background-image: url('https://readdy.ai/api/search-image?query=elegant%20silver%20drop%20earrings%20with%20delicate%20chain%20design%20on%20a%20minimalist%20light%20gray%20background%2C%20professional%20jewelry%20photography%20with%20soft%20lighting%20highlighting%20the%20silver%20details%20and%20craftsmanship%2C%20high-end%20luxury%20product%20shot%20with%20clean%20composition&amp;width=600&amp;height=600&amp;seq=9&amp;orientation=squarish'); background-size: cover; background-position: object-top; height: 300px;"></div>
+<div class="absolute top-4 right-4 flex flex-col gap-2">
+<button class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#808080] hover:text-primary transition-colors duration-300 shadow-sm">
+<i class="ri-heart-line ri-lg"></i>
+</button>
+<button class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#808080] hover:text-primary transition-colors duration-300 shadow-sm">
+<i class="ri-eye-line ri-lg"></i>
+</button>
+</div>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-white text-xs px-3 py-1 rounded-full">New</span>
+</div>
+</div>
+<div class="p-4">
+<h3 class="text-lg font-medium mb-1">Cascade Drop Earrings</h3>
+<p class="text-[#808080] text-sm mb-2">Delicate Chain Design</p>
+<div class="flex items-center justify-between">
+<span class="text-[#333333] font-semibold">$135.00</span>
+<button class="bg-[#F5F5F5] hover:bg-primary hover:text-white text-[#333333] p-2 rounded-full transition-colors duration-300">
+<i class="ri-shopping-bag-line"></i>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tab-content hidden" id="bestsellers">
+<!-- Bestsellers content would go here -->
+</div>
+<div class="tab-content hidden" id="on-sale">
+<!-- On Sale content would go here -->
+</div>
+<div class="text-center mt-12">
+<a class="inline-block border border-[#333333] text-[#333333] px-8 py-3 !rounded-button font-medium hover:bg-[#333333] hover:text-white transition-all duration-300 whitespace-nowrap" href="#">View All Products</a>
+</div>
+</div>
+</section>
+<!-- Parallax Banner -->
+<section class="parallax-section py-32 relative">
+<div class="parallax-bg" style="background-image: url('https://readdy.ai/api/search-image?query=elegant%20silver%20jewelry%20collection%20with%20necklaces%2C%20rings%2C%20and%20bracelets%20arranged%20artistically%20on%20a%20dark%20gray%20background%20with%20dramatic%20lighting%20and%20subtle%20silver%20reflections%2C%20luxury%20product%20photography%20with%20moody%20atmosphere%20and%20high%20contrast%2C%20professional%20jewelry%20showcase&amp;width=1920&amp;height=800&amp;seq=10&amp;orientation=landscape'); background-size: cover; background-position: center; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></div>
+<div class="absolute inset-0 bg-black bg-opacity-40 z-0"></div>
+<div class="container mx-auto px-4 relative z-10">
+<div class="max-w-2xl mx-auto text-center text-white">
+<h2 class="text-4xl md:text-5xl font-light mb-6">
+            Craftsmanship that <span class="font-semibold">Speaks</span>
+</h2>
+<p class="text-lg mb-8">
+            Each piece in our collection is meticulously handcrafted by skilled
+            artisans, combining traditional techniques with contemporary design
+            to create timeless treasures.
+          </p>
+<a class="inline-block bg-white text-[#333333] px-8 py-3 !rounded-button font-medium hover:bg-opacity-90 transition-all duration-300 whitespace-nowrap" href="#">Our Story</a>
+</div>
+</div>
+</section>
+<!-- Product Showcase -->
+<section class="py-20 bg-[#F5F5F5]" id="collections">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-light mb-4">
+            Our <span class="font-semibold">Collection</span>
+</h2>
+<p class="text-[#808080] max-w-2xl mx-auto">
+            Discover our exquisite range of handcrafted silver jewelry, each
+            piece a testament to timeless elegance and meticulous artistry.
+          </p>
+</div>
+<div class="flex flex-wrap mb-10 justify-center">
+<div class="flex flex-wrap justify-center gap-4">
+<button class="px-4 py-2 bg-primary text-white !rounded-button whitespace-nowrap">
+              All
+            </button>
+<button class="px-4 py-2 bg-white text-[#333333] !rounded-button hover:bg-[#EEEEEE] transition-colors duration-300 whitespace-nowrap">
+              Necklaces
+            </button>
+<button class="px-4 py-2 bg-white text-[#333333] !rounded-button hover:bg-[#EEEEEE] transition-colors duration-300 whitespace-nowrap">
+              Bracelets
+            </button>
+<button class="px-4 py-2 bg-white text-[#333333] !rounded-button hover:bg-[#EEEEEE] transition-colors duration-300 whitespace-nowrap">
+              Rings
+            </button>
+<button class="px-4 py-2 bg-white text-[#333333] !rounded-button hover:bg-[#EEEEEE] transition-colors duration-300 whitespace-nowrap">
+              Earrings
+            </button>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 fade-in">
+<div class="relative">
+<div style="background-image: url('https://readdy.ai/api/search-image?query=elegant%20silver%20chain%20necklace%20with%20minimalist%20pendant%20on%20a%20light%20gray%20background%2C%20professional%20jewelry%20photography%20with%20soft%20lighting%20highlighting%20the%20silver%20details%20and%20craftsmanship%2C%20high-end%20luxury%20product%20shot%20with%20clean%20composition&amp;width=600&amp;height=600&amp;seq=11&amp;orientation=squarish'); background-size: cover; background-position: object-top; height: 350px;"></div>
+<div class="absolute top-4 right-4 flex flex-col gap-2">
+<button class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#808080] hover:text-primary transition-colors duration-300 shadow-sm">
+<i class="ri-heart-line ri-lg"></i>
+</button>
+<button class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#808080] hover:text-primary transition-colors duration-300 shadow-sm">
+<i class="ri-eye-line ri-lg"></i>
+</button>
+</div>
+</div>
+<div class="p-4">
+<h3 class="text-lg font-medium mb-1">Serenity Chain Necklace</h3>
+<p class="text-[#808080] text-sm mb-2">Minimalist Pendant</p>
+<div class="flex items-center justify-between">
+<span class="text-[#333333] font-semibold">$165.00</span>
+<button class="bg-[#F5F5F5] hover:bg-primary hover:text-white text-[#333333] p-2 rounded-full transition-colors duration-300">
+<i class="ri-shopping-bag-line"></i>
+</button>
+</div>
+</div>
+</div>
+<div class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 fade-in">
+<div class="relative">
+<div style="background-image: url('https://readdy.ai/api/search-image?query=elegant%20silver%20cuff%20bracelet%20with%20textured%20design%20on%20a%20light%20gray%20background%2C%20professional%20jewelry%20photography%20with%20soft%20lighting%20highlighting%20the%20silver%20details%20and%20craftsmanship%2C%20high-end%20luxury%20product%20shot%20with%20clean%20composition&amp;width=600&amp;height=600&amp;seq=12&amp;orientation=squarish'); background-size: cover; background-position: object-top; height: 350px;"></div>
+<div class="absolute top-4 right-4 flex flex-col gap-2">
+<button class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#808080] hover:text-primary transition-colors duration-300 shadow-sm">
+<i class="ri-heart-line ri-lg"></i>
+</button>
+<button class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#808080] hover:text-primary transition-colors duration-300 shadow-sm">
+<i class="ri-eye-line ri-lg"></i>
+</button>
+</div>
+<div class="absolute top-4 left-4">
+<span class="bg-[#808080] text-white text-xs px-3 py-1 rounded-full">Bestseller</span>
+</div>
+</div>
+<div class="p-4">
+<h3 class="text-lg font-medium mb-1">Ripple Cuff Bracelet</h3>
+<p class="text-[#808080] text-sm mb-2">Textured Design</p>
+<div class="flex items-center justify-between">
+<span class="text-[#333333] font-semibold">$195.00</span>
+<button class="bg-[#F5F5F5] hover:bg-primary hover:text-white text-[#333333] p-2 rounded-full transition-colors duration-300">
+<i class="ri-shopping-bag-line"></i>
+</button>
+</div>
+</div>
+</div>
+<div class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 fade-in">
+<div class="relative">
+<div style="background-image: url('https://readdy.ai/api/search-image?query=elegant%20silver%20stacking%20rings%20set%20with%20minimalist%20design%20on%20a%20light%20gray%20background%2C%20professional%20jewelry%20photography%20with%20soft%20lighting%20highlighting%20the%20silver%20details%20and%20craftsmanship%2C%20high-end%20luxury%20product%20shot%20with%20clean%20composition&amp;width=600&amp;height=600&amp;seq=13&amp;orientation=squarish'); background-size: cover; background-position: object-top; height: 350px;"></div>
+<div class="absolute top-4 right-4 flex flex-col gap-2">
+<button class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#808080] hover:text-primary transition-colors duration-300 shadow-sm">
+<i class="ri-heart-line ri-lg"></i>
+</button>
+<button class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#808080] hover:text-primary transition-colors duration-300 shadow-sm">
+<i class="ri-eye-line ri-lg"></i>
+</button>
+</div>
+</div>
+<div class="p-4">
+<h3 class="text-lg font-medium mb-1">Harmony Stacking Rings</h3>
+<p class="text-[#808080] text-sm mb-2">Set of 3</p>
+<div class="flex items-center justify-between">
+<span class="text-[#333333] font-semibold">$150.00</span>
+<button class="bg-[#F5F5F5] hover:bg-primary hover:text-white text-[#333333] p-2 rounded-full transition-colors duration-300">
+<i class="ri-shopping-bag-line"></i>
+</button>
+</div>
+</div>
+</div>
+<div class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 fade-in">
+<div class="relative">
+<div style="background-image: url('https://readdy.ai/api/search-image?query=elegant%20silver%20hoop%20earrings%20with%20textured%20detail%20on%20a%20light%20gray%20background%2C%20professional%20jewelry%20photography%20with%20soft%20lighting%20highlighting%20the%20silver%20details%20and%20craftsmanship%2C%20high-end%20luxury%20product%20shot%20with%20clean%20composition&amp;width=600&amp;height=600&amp;seq=14&amp;orientation=squarish'); background-size: cover; background-position: object-top; height: 350px;"></div>
+<div class="absolute top-4 right-4 flex flex-col gap-2">
+<button class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#808080] hover:text-primary transition-colors duration-300 shadow-sm">
+<i class="ri-heart-line ri-lg"></i>
+</button>
+<button class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#808080] hover:text-primary transition-colors duration-300 shadow-sm">
+<i class="ri-eye-line ri-lg"></i>
+</button>
+</div>
+<div class="absolute top-4 left-4">
+<span class="bg-[#808080] text-white text-xs px-3 py-1 rounded-full">Bestseller</span>
+</div>
+</div>
+<div class="p-4">
+<h3 class="text-lg font-medium mb-1">Echo Hoop Earrings</h3>
+<p class="text-[#808080] text-sm mb-2">Textured Detail</p>
+<div class="flex items-center justify-between">
+<span class="text-[#333333] font-semibold">$125.00</span>
+<button class="bg-[#F5F5F5] hover:bg-primary hover:text-white text-[#333333] p-2 rounded-full transition-colors duration-300">
+<i class="ri-shopping-bag-line"></i>
+</button>
+</div>
+</div>
+</div>
+<div class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 fade-in">
+<div class="relative">
+<div style="background-image: url('https://readdy.ai/api/search-image?query=elegant%20silver%20statement%20necklace%20with%20geometric%20pendant%20on%20a%20light%20gray%20background%2C%20professional%20jewelry%20photography%20with%20soft%20lighting%20highlighting%20the%20silver%20details%20and%20craftsmanship%2C%20high-end%20luxury%20product%20shot%20with%20clean%20composition&amp;width=600&amp;height=600&amp;seq=15&amp;orientation=squarish'); background-size: cover; background-position: object-top; height: 350px;"></div>
+<div class="absolute top-4 right-4 flex flex-col gap-2">
+<button class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#808080] hover:text-primary transition-colors duration-300 shadow-sm">
+<i class="ri-heart-line ri-lg"></i>
+</button>
+<button class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#808080] hover:text-primary transition-colors duration-300 shadow-sm">
+<i class="ri-eye-line ri-lg"></i>
+</button>
+</div>
+</div>
+<div class="p-4">
+<h3 class="text-lg font-medium mb-1">Prism Statement Necklace</h3>
+<p class="text-[#808080] text-sm mb-2">Geometric Pendant</p>
+<div class="flex items-center justify-between">
+<span class="text-[#333333] font-semibold">$210.00</span>
+<button class="bg-[#F5F5F5] hover:bg-primary hover:text-white text-[#333333] p-2 rounded-full transition-colors duration-300">
+<i class="ri-shopping-bag-line"></i>
+</button>
+</div>
+</div>
+</div>
+<div class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 fade-in">
+<div class="relative">
+<div style="background-image: url('https://readdy.ai/api/search-image?query=elegant%20silver%20chain%20bracelet%20with%20charm%20detail%20on%20a%20light%20gray%20background%2C%20professional%20jewelry%20photography%20with%20soft%20lighting%20highlighting%20the%20silver%20details%20and%20craftsmanship%2C%20high-end%20luxury%20product%20shot%20with%20clean%20composition&amp;width=600&amp;height=600&amp;seq=16&amp;orientation=squarish'); background-size: cover; background-position: object-top; height: 350px;"></div>
+<div class="absolute top-4 right-4 flex flex-col gap-2">
+<button class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#808080] hover:text-primary transition-colors duration-300 shadow-sm">
+<i class="ri-heart-line ri-lg"></i>
+</button>
+<button class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#808080] hover:text-primary transition-colors duration-300 shadow-sm">
+<i class="ri-eye-line ri-lg"></i>
+</button>
+</div>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-white text-xs px-3 py-1 rounded-full">New</span>
+</div>
+</div>
+<div class="p-4">
+<h3 class="text-lg font-medium mb-1">Whisper Chain Bracelet</h3>
+<p class="text-[#808080] text-sm mb-2">Delicate Charm</p>
+<div class="flex items-center justify-between">
+<span class="text-[#333333] font-semibold">$135.00</span>
+<button class="bg-[#F5F5F5] hover:bg-primary hover:text-white text-[#333333] p-2 rounded-full transition-colors duration-300">
+<i class="ri-shopping-bag-line"></i>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center mt-12">
+<a class="inline-block border border-[#333333] text-[#333333] px-8 py-3 !rounded-button font-medium hover:bg-[#333333] hover:text-white transition-all duration-300 whitespace-nowrap" href="#">Load More</a>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-20 bg-white">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-light mb-4">
+            Client <span class="font-semibold">Testimonials</span>
+</h2>
+<p class="text-[#808080] max-w-2xl mx-auto">
+            Hear what our customers have to say about their experience with our
+            jewelry.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-[#F5F5F5] p-6 rounded-lg fade-in">
+<div class="flex items-center mb-4">
+<div class="text-primary">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+<p class="text-[#333333] mb-6">
+              "The craftsmanship of my Aria Silver Pendant is absolutely
+              stunning. The attention to detail is remarkable, and it has
+              quickly become my favorite piece of jewelry. I receive compliments
+              every time I wear it."
+            </p>
+<div class="flex items-center">
+<div class="w-12 h-12 rounded-full bg-[#D3D3D3] flex items-center justify-center text-white font-medium">
+                EB
+              </div>
+<div class="ml-4">
+<h4 class="font-medium">Emily Bennett</h4>
+<p class="text-sm text-[#808080]">New York, USA</p>
+</div>
+</div>
+</div>
+<div class="bg-[#F5F5F5] p-6 rounded-lg fade-in">
+<div class="flex items-center mb-4">
+<div class="text-primary">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+<p class="text-[#333333] mb-6">
+              "I purchased the Harmony Stacking Rings as a gift for my sister,
+              and she absolutely loves them! The quality is exceptional, and
+              they look even more beautiful in person. The packaging was also
+              elegant and perfect for gifting."
+            </p>
+<div class="flex items-center">
+<div class="w-12 h-12 rounded-full bg-[#D3D3D3] flex items-center justify-center text-white font-medium">
+                JL
+              </div>
+<div class="ml-4">
+<h4 class="font-medium">James Lawrence</h4>
+<p class="text-sm text-[#808080]">London, UK</p>
+</div>
+</div>
+</div>
+<div class="bg-[#F5F5F5] p-6 rounded-lg fade-in">
+<div class="flex items-center mb-4">
+<div class="text-primary">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+<p class="text-[#333333] mb-6">
+              "The Echo Hoop Earrings are simply exquisite. They're lightweight
+              and comfortable to wear all day, yet make such a statement. The
+              textured detail catches the light beautifully. I'm already
+              planning my next purchase!"
+            </p>
+<div class="flex items-center">
+<div class="w-12 h-12 rounded-full bg-[#D3D3D3] flex items-center justify-center text-white font-medium">
+                SO
+              </div>
+<div class="ml-4">
+<h4 class="font-medium">Sophia Oliveira</h4>
+<p class="text-sm text-[#808080]">Paris, France</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter -->
+<section class="py-20 bg-[#F5F5F5] relative overflow-hidden shimmer">
+<div class="container mx-auto px-4 relative z-10">
+<div class="max-w-2xl mx-auto text-center">
+<h2 class="text-4xl font-light mb-4">
+            Stay <span class="font-semibold">Connected</span>
+</h2>
+<p class="text-[#808080] mb-8">
+            Subscribe to our newsletter to receive exclusive offers, new
+            collection announcements, and styling inspiration.
+          </p>
+<div class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+<input class="flex-grow px-4 py-3 rounded-button border-none focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Your email address" type="email"/>
+<button class="bg-primary text-white px-6 py-3 !rounded-button font-medium hover:bg-opacity-90 transition-all duration-300 whitespace-nowrap">
+              Subscribe
+            </button>
+</div>
+<p class="text-xs text-[#808080] mt-4">
+            By subscribing, you agree to our Privacy Policy and consent to
+            receive updates from our company.
+          </p>
+</div>
+</div>
+</section>
+<!-- Instagram Feed -->
+<section class="py-20 bg-white">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-light mb-4">
+            Follow Our <span class="font-semibold">Instagram</span>
+</h2>
+<p class="text-[#808080] max-w-2xl mx-auto">@silverajewelry</p>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+<div class="relative group overflow-hidden rounded-lg fade-in">
+<div class="transform group-hover:scale-110 transition-transform duration-500" style="background-image: url('https://readdy.ai/api/search-image?query=elegant%20silver%20necklace%20being%20worn%20by%20a%20stylish%20woman%2C%20close-up%20shot%20focusing%20on%20the%20jewelry%2C%20professional%20fashion%20photography%20with%20soft%20lighting%2C%20lifestyle%20jewelry%20image%20with%20neutral%20background&amp;width=400&amp;height=400&amp;seq=17&amp;orientation=squarish'); background-size: cover; background-position: center; height: 200px;"></div>
+<div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+<a class="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" href="#">
+<i class="ri-instagram-line ri-xl"></i>
+</a>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-lg fade-in">
+<div class="transform group-hover:scale-110 transition-transform duration-500" style="background-image: url('https://readdy.ai/api/search-image?query=elegant%20silver%20bracelet%20on%20a%20womans%20wrist%2C%20close-up%20shot%20focusing%20on%20the%20jewelry%2C%20professional%20fashion%20photography%20with%20soft%20lighting%2C%20lifestyle%20jewelry%20image%20with%20neutral%20background&amp;width=400&amp;height=400&amp;seq=18&amp;orientation=squarish'); background-size: cover; background-position: center; height: 200px;"></div>
+<div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+<a class="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" href="#">
+<i class="ri-instagram-line ri-xl"></i>
+</a>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-lg fade-in">
+<div class="transform group-hover:scale-110 transition-transform duration-500" style="background-image: url('https://readdy.ai/api/search-image?query=elegant%20silver%20rings%20on%20a%20womans%20hand%2C%20close-up%20shot%20focusing%20on%20the%20jewelry%2C%20professional%20fashion%20photography%20with%20soft%20lighting%2C%20lifestyle%20jewelry%20image%20with%20neutral%20background&amp;width=400&amp;height=400&amp;seq=19&amp;orientation=squarish'); background-size: cover; background-position: center; height: 200px;"></div>
+<div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+<a class="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" href="#">
+<i class="ri-instagram-line ri-xl"></i>
+</a>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-lg fade-in">
+<div class="transform group-hover:scale-110 transition-transform duration-500" style="background-image: url('https://readdy.ai/api/search-image?query=elegant%20silver%20earrings%20being%20worn%20by%20a%20stylish%20woman%2C%20close-up%20shot%20focusing%20on%20the%20jewelry%2C%20professional%20fashion%20photography%20with%20soft%20lighting%2C%20lifestyle%20jewelry%20image%20with%20neutral%20background&amp;width=400&amp;height=400&amp;seq=20&amp;orientation=squarish'); background-size: cover; background-position: center; height: 200px;"></div>
+<div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+<a class="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" href="#">
+<i class="ri-instagram-line ri-xl"></i>
+</a>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-lg fade-in">
+<div class="transform group-hover:scale-110 transition-transform duration-500" style="background-image: url('https://readdy.ai/api/search-image?query=elegant%20silver%20jewelry%20collection%20arranged%20artistically%20on%20a%20light%20surface%2C%20professional%20product%20photography%20with%20soft%20lighting%2C%20flat%20lay%20composition%20of%20multiple%20silver%20pieces&amp;width=400&amp;height=400&amp;seq=21&amp;orientation=squarish'); background-size: cover; background-position: center; height: 200px;"></div>
+<div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+<a class="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" href="#">
+<i class="ri-instagram-line ri-xl"></i>
+</a>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-lg fade-in">
+<div class="transform group-hover:scale-110 transition-transform duration-500" style="background-image: url('https://readdy.ai/api/search-image?query=elegant%20silver%20jewelry%20making%20process%2C%20close-up%20of%20artisan%20hands%20working%20on%20silver%20piece%2C%20professional%20photography%20with%20soft%20lighting%2C%20behind%20the%20scenes%20craftsmanship%20image&amp;width=400&amp;height=400&amp;seq=22&amp;orientation=squarish'); background-size: cover; background-position: center; height: 200px;"></div>
+<div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+<a class="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" href="#">
+<i class="ri-instagram-line ri-xl"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="about" class="parallax-section py-20 bg-white relative">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-4xl font-light mb-4">About <span class="font-semibold">Us</span></h2>
+    <p class="text-[#808080] max-w-2xl mx-auto">
+      Silvera blends timeless elegance with modern design. Each piece is handcrafted with precision and artistry.
+    </p>
+  </div>
+</section>
+
+<section id="contact" class="parallax-section py-20 bg-[#F5F5F5] relative">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-light mb-6 text-center">Get in <span class="font-semibold">Touch</span></h2>
+    <form class="max-w-xl mx-auto space-y-4">
+      <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-button border border-[#ccc]" required>
+      <input type="email" placeholder="Your Email" class="w-full px-4 py-3 rounded-button border border-[#ccc]" required>
+      <textarea placeholder="Your Message" rows="5" class="w-full px-4 py-3 rounded-button border border-[#ccc]" required></textarea>
+      <button type="submit" class="bg-primary text-white px-6 py-3 !rounded-button font-medium hover:bg-opacity-90">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[#333333] text-white pt-16 pb-8">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+<div>
+<a class="font-['Italiana'] text-3xl text-white mb-6 inline-block tracking-widest" href="#">SILVERA</a>
+<p class="text-[#D3D3D3] mb-6">
+              Exquisite handcrafted silver jewelry for the modern woman.
+              Timeless elegance meets contemporary design.
+            </p>
+<div class="flex space-x-4">
+<a class="w-10 h-10 rounded-full border border-[#D3D3D3] flex items-center justify-center hover:bg-white hover:text-[#333333] transition-colors duration-300" href="#">
+<i class="ri-facebook-fill"></i>
+</a>
+<a class="w-10 h-10 rounded-full border border-[#D3D3D3] flex items-center justify-center hover:bg-white hover:text-[#333333] transition-colors duration-300" href="#">
+<i class="ri-instagram-fill"></i>
+</a>
+<a class="w-10 h-10 rounded-full border border-[#D3D3D3] flex items-center justify-center hover:bg-white hover:text-[#333333] transition-colors duration-300" href="#">
+<i class="ri-pinterest-fill"></i>
+</a>
+<a class="w-10 h-10 rounded-full border border-[#D3D3D3] flex items-center justify-center hover:bg-white hover:text-[#333333] transition-colors duration-300" href="#">
+<i class="ri-twitter-fill"></i>
+</a>
+</div>
+</div>
+<div>
+<h3 class="text-lg font-medium mb-6">Quick Links</h3>
+<ul class="space-y-3">
+<li>
+<a class="text-[#D3D3D3] hover:text-white transition-colors duration-300" href="#">Home</a>
+</li>
+<li>
+<a class="text-[#D3D3D3] hover:text-white transition-colors duration-300" href="#">Shop</a>
+</li>
+<li>
+<a class="text-[#D3D3D3] hover:text-white transition-colors duration-300" href="#">Collections</a>
+</li>
+<li>
+<a class="text-[#D3D3D3] hover:text-white transition-colors duration-300" href="#">About Us</a>
+</li>
+<li>
+<a class="text-[#D3D3D3] hover:text-white transition-colors duration-300" href="#">Contact</a>
+</li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-medium mb-6">Customer Service</h3>
+<ul class="space-y-3">
+<li>
+<a class="text-[#D3D3D3] hover:text-white transition-colors duration-300" href="#">FAQ</a>
+</li>
+<li>
+<a class="text-[#D3D3D3] hover:text-white transition-colors duration-300" href="#">Shipping &amp; Returns</a>
+</li>
+<li>
+<a class="text-[#D3D3D3] hover:text-white transition-colors duration-300" href="#">Care Instructions</a>
+</li>
+<li>
+<a class="text-[#D3D3D3] hover:text-white transition-colors duration-300" href="#">Size Guide</a>
+</li>
+<li>
+<a class="text-[#D3D3D3] hover:text-white transition-colors duration-300" href="#">Privacy Policy</a>
+</li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-medium mb-6">Contact Us</h3>
+<ul class="space-y-3">
+<li class="flex items-start">
+<i class="ri-map-pin-line mt-1 mr-3"></i>
+<span class="text-[#D3D3D3]">123 Silver Street, New York, NY 10001, USA</span>
+</li>
+<li class="flex items-center">
+<i class="ri-phone-line mr-3"></i>
+<span class="text-[#D3D3D3]">+1 (555) 123-4567</span>
+</li>
+<li class="flex items-center">
+<i class="ri-mail-line mr-3"></i>
+<span class="text-[#D3D3D3]">info@silverajewelry.com</span>
+</li>
+<li class="flex items-center">
+<i class="ri-time-line mr-3"></i>
+<span class="text-[#D3D3D3]">Mon-Fri: 9am-6pm EST</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-[#4D4D4D] flex flex-col md:flex-row justify-between items-center">
+<p class="text-[#D3D3D3] text-sm mb-4 md:mb-0">
+            © 2025 Silvera Jewelry. All rights reserved.
+          </p>
+<div class="flex items-center space-x-4">
+<i class="ri-visa-fill ri-lg"></i>
+<i class="ri-mastercard-fill ri-lg"></i>
+<i class="ri-paypal-fill ri-lg"></i>
+<i class="ri-apple-fill ri-lg"></i>
+</div>
+</div>
+</div>
+</footer>
+<!-- GSAP and Plugins -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+<!-- Main Script -->
+
+<!-- Tab Switching Script -->
+<script id="tab-script">
+      document.addEventListener("DOMContentLoaded", function () {
+        const tabButtons = document.querySelectorAll(".tab-button");
+        const tabContents = document.querySelectorAll(".tab-content");
+        tabButtons.forEach((button) => {
+          button.addEventListener("click", () => {
+            // Remove active class from all buttons
+            tabButtons.forEach((btn) => btn.classList.remove("active"));
+            // Add active class to clicked button
+            button.classList.add("active");
+            // Hide all tab contents
+            tabContents.forEach((content) => content.classList.add("hidden"));
+            // Show the selected tab content
+            const tabId = button.getAttribute("data-tab");
+            document.getElementById(tabId).classList.remove("hidden");
+          });
+        });
+      });
+    </script>
+<script src="silvera.js"></script></body>
+</html>
+
+
